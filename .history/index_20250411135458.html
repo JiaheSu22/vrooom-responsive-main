@@ -79,9 +79,9 @@
     /* Tilted video box */
     .hero-video {
       position: absolute;
-      top: auto;
-      bottom: 20px;
-      right: 20px;
+      top: 10%;
+      right: 0px;
+      width: 40%;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
       z-index: 0;
       border-radius: 5px;
@@ -101,8 +101,7 @@
 
     /* CARD SECTION */
     .card-section {
-      display: flex;
-      flex-wrap: wrap;
+
       justify-content: center;
       gap: 20px;
       padding: 50px 10%;
@@ -115,7 +114,7 @@
       border-radius: 8px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
       padding: 20px;
-      width: 32%;
+      width: 280px;
       transition: transform 0.3s ease;
     }
 
@@ -124,8 +123,8 @@
       border: 1px solid #ddd;
       border-radius: 8px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-      width: 32%;
       padding: 20px;
+      width: 280px;
       transition: transform 0.3s ease;
     }
 
@@ -147,80 +146,6 @@
     .card p {
       font-size: 0.95em;
       color: #444;
-    }
-
-    .form-section {
-      display: flex;
-      flex-direction: column;
-      background: #f9f9f9;
-      padding: 50px 10%;
-      text-align: center;
-    }
-
-    .form-section form {
-      display: flex;
-      flex-direction: column;
-      background: rgb(194, 237, 250);
-      border-radius: 8px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-      width: 50%;
-      padding: 40px;
-      margin: auto;
-    }
-
-    .form-section label {
-      display: flex;
-      font-weight: bold;
-      margin-bottom: 5px;
-      color: #000000;
-    }
-
-    .form-section input,
-    textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-
-    .form-section .form {
-      margin-bottom: 15px;
-    }
-
-    .form-section button {
-      margin: auto;
-      background: #f6e3b4;
-      color: #000000;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1.1em;
-      width: 50%;
-      margin-top: 20px;
-      transition: background 0.3s ease;
-    }
-
-    .form-section button:hover {
-      background: #f97705;
-      color: #fff;
-    }
-
-    .footer {
-      background: #000000;
-      padding: 20px;
-      text-align: center;
-      color: #ffffff;
-    }
-
-    .footer a {
-      color: #ffffff;
-      transition: background 0.3s ease;
-    }
-
-    .footer a:hover {
-      color: #f6e3b4;
     }
 
     /* Responsive Adjustments */
@@ -291,50 +216,8 @@
       <h3>Smart Interior</h3>
       <p>Includes voice assistant, panoramic HUD, memory seats, and climate AI.</p>
     </div>
-    <div class="card">
-      <h3>Safety Features</h3>
-      <p>Equipped with 360-degree cameras, collision detection, and lane assist.</p>
-    </div>
-    <div class="card">
-      <h3>Entertainment System</h3>
-      <p>High-fidelity sound system with immersive surround sound experience.</p>
-    </div>
   </section>
 
-  <section class="form-section">
-    <form action="">
-      <div class="form-header">
-        <h3>Submit your test drive application here!</h3>
-        <br><br>
-      </div>
-      <div class="form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form">
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-      <div class="form">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <section class="footer">
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 Vrooom. All rights reserved.</p>
-        <p>Contact us on <a href="mailto:contect@vroom.com">Email</a>
-      </div>
-    </footer>
-  </section>
 </body>
 
 </html>

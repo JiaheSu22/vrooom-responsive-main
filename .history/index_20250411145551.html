@@ -160,28 +160,18 @@
     .form-section form {
       display: flex;
       flex-direction: column;
-      background: rgb(194, 237, 250);
+      background: rgb(155, 228, 250);
       border-radius: 8px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-      width: 50%;
-      padding: 40px;
+      padding: 20px;
       margin: auto;
     }
 
     .form-section label {
-      display: flex;
+      display: block;
       font-weight: bold;
       margin-bottom: 5px;
       color: #000000;
-    }
-
-    .form-section input,
-    textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin-bottom: 15px;
     }
 
     .form-section .form {
@@ -189,16 +179,14 @@
     }
 
     .form-section button {
-      margin: auto;
       background: #f6e3b4;
       color: #000000;
       border: none;
-      padding: 12px 25px;
+      padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
-      font-size: 1.1em;
-      width: 50%;
-      margin-top: 20px;
+      font-size: 1em;
+      margin-top: 10px;
       transition: background 0.3s ease;
     }
 
@@ -207,21 +195,6 @@
       color: #fff;
     }
 
-    .footer {
-      background: #000000;
-      padding: 20px;
-      text-align: center;
-      color: #ffffff;
-    }
-
-    .footer a {
-      color: #ffffff;
-      transition: background 0.3s ease;
-    }
-
-    .footer a:hover {
-      color: #f6e3b4;
-    }
 
     /* Responsive Adjustments */
     @media (max-width: 768px) {
@@ -303,10 +276,7 @@
 
   <section class="form-section">
     <form action="">
-      <div class="form-header">
-        <h3>Submit your test drive application here!</h3>
-        <br><br>
-      </div>
+      <h3>Submit your test drive application here!</h3>
       <div class="form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -325,15 +295,6 @@
       </div>
       <button type="submit">Submit</button>
     </form>
-  </section>
-
-  <section class="footer">
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 Vrooom. All rights reserved.</p>
-        <p>Contact us on <a href="mailto:contect@vroom.com">Email</a>
-      </div>
-    </footer>
   </section>
 </body>
 

@@ -152,15 +152,20 @@
     .form-section {
       display: flex;
       flex-direction: column;
-      background: #f9f9f9;
+      background: #ffffff;
       padding: 50px 10%;
+
+    }
+
+    .form-section h3 {
       text-align: center;
+      color: #f97705;
+      margin-bottom: 20px;
     }
 
     .form-section form {
       display: flex;
       flex-direction: column;
-      background: rgb(194, 237, 250);
       border-radius: 8px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
       width: 50%;
@@ -303,10 +308,7 @@
 
   <section class="form-section">
     <form action="">
-      <div class="form-header">
-        <h3>Submit your test drive application here!</h3>
-        <br><br>
-      </div>
+      <h3 style="color: rgb(223, 55, 55);">Submit your test drive application here!</h3> <br><br>
       <div class="form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
